@@ -1,4 +1,4 @@
-name: 'workflows日志自动清理'
+name: 'workflows logs auto-clean'
 
 on:
   schedule:
@@ -12,4 +12,4 @@ jobs:
       - name: Delete workflow runs
         uses: GitRML/delete-workflow-runs@main
         with:
-          retain_days: '2'
+          retain_days: '1'
