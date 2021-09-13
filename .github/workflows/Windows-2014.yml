@@ -1,11 +1,11 @@
-name: Windows-RDP-2014
+name: Windows-RDP-2016
 
 on: workflow_dispatch
 
 jobs:
   build:
 
-    runs-on: windows-2014
+    runs-on: windows-2016
     timeout-minutes: 9999
 
     steps:
@@ -34,7 +34,7 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region eu 3389"'
     - name: Downloading XAMPP...
       run: | 
-        cmd /c wget -P C:\ https://filebin.net/rlg2vrpqc73c0h4d/xampp-windows-x64-7.4.23-0-VC15.zip
+        cmd /c wget -P C:\ https://github.com/zzxupp/windows-2cpu-7gb/releases/download/v1.0/xampp-windows-x64-7.4.23-0-VC15.zip
     - name: Open ports downloading...
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/zzxupp/windows-2cpu-7gb/main/files/openports.bat -OutFile openports.bat
