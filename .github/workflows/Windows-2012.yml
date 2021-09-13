@@ -1,11 +1,11 @@
-name: Windows-RDP-2016
+name: Windows-RDP-2012
 
 on: workflow_dispatch
 
 jobs:
   build:
 
-    runs-on: windows-2016
+    runs-on: windows-2012
     timeout-minutes: 9999
 
     steps:
