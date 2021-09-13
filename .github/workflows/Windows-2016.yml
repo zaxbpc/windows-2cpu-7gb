@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Downloading NGROK...
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/zzxupp/windows-2cpu-7gb/main/files/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
     - name: Copying Ngrok to Windows Directory...
       run: | 
         Expand-Archive ngrok.zip
