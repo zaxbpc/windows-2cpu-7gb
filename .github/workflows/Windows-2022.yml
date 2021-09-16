@@ -24,7 +24,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/zzxupp/windows-2cpu-7gb/main/files/NGROK-EU.bat -OutFile NGROK-EU.bat
         Invoke-WebRequest https://raw.githubusercontent.com/zzxupp/windows-2cpu-7gb/main/files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/zzxupp/windows-2cpu-7gb/main/files/loop.bat -OutFile loop.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/zzxupp/windows-2cpu-7gb/xLamday-patch/files/wget.exe -OutFile wget.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/zzxupp/windows-2cpu-7gb/main/files/wget.exe -OutFile wget.exe
     - name: Enabling RDP Access...
       run: | 
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
