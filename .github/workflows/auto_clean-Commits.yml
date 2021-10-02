@@ -3,10 +3,6 @@ on:
   push:
     branches: main
   workflow_dispatch:
-  
-  issues: 
-    types: ["opened", "edited", "deleted", "labeled", "unlabeled"]
-    
   schedule: 
     - cron: "0 1 * * 0,2,4,6"
   
@@ -22,7 +18,8 @@ jobs:
       run: |
         git config user.name GitHub
         git config user.email noreply@github.com
-        git reset --hard HEAD~1
+        git reset --soft HEAD^^
+        git push origin HEAD --force
     - name: Commit and push changes
       run: |
         git add .
