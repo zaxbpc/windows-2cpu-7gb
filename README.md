@@ -23,7 +23,3 @@ Create a free VPS with 2cpu-7gb Ram FREE with Github:
 * DO NOT SHARE THIS WITH ANYONE
 * NON CONDIVIDERE QUESTO CON NESSUNO
 * DON'T USE FOR MINING OR ILLEGAL USE
-
-## Thanks
-* [xLamday/LuppiLandia-WindowsRDP](https://github.com/xLamday/LuppiLandia-WindowsRDP)
-* 
