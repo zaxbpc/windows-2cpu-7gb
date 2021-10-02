@@ -16,14 +16,5 @@ jobs:
       run: |
         git config user.name GitHub
         git config user.email noreply@github.com
-    - name: Commit and push changes
-      run: |
-        git init
-        git remote add origin git@github.com:user/repo
-        git add *
-        git commit -am 'message'
-        git push -f origin master
-        if output=$(git status --porcelain) && [ ! -z "$output" ]; then
-          git commit --author "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" --message "update the goals cache"
-          git push
-        fi
+        git reset --hard 8b65ea6
+
