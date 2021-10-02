@@ -1,7 +1,5 @@
 name: auto_clean-Commits
 on:
-  push:
-    branches: main
   workflow_dispatch:
   schedule: 
     - cron: "0 1 * * 0,2,4,6"
